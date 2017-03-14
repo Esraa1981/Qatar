@@ -5,58 +5,38 @@
 <head >
 	<title>Museum of Islamic Art</title>
 </head>
-
-<body>
-
-<div id="wrapper">
-<img id="logo" name="logo" src="logo.png" />
-<center>
-<img id="banner" name="sss" src="banner1.jpg" width="961" height="270"  />
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="Doha-Corniche.html">Doha Corniche</a></li>
-<li><a href="Souq-Waqif.html">Souq Waqif</a></li>
-<li><a href="Museum-of-Islamic-Art.html">Museum of Islamic Art</a></li>
-<li><a href="Katara-Cultural-Village.html">Katara Cultural Village</a></li>
-<li><a href="The-Pearl-Qatar.html">The Pearl-Qatar</a></li>
-</ul>
-</nav>
-<h1>Enjoy Culture and Recreation at Katara</h1>
-<p>An innovative interpretation of the region’s architectural heritage, this purpose-built development’s impressive theatres, galleries and performance venues stage a lively year-round programme of concerts, shows and exhibitions. Among Katara’s recreational attractions are a wide choice of dining options, including top class restaurants offering a variety of cuisines, and a spacious, well-maintained public beach with water sports.</p><br><br>
-<div id="slideShow">
-<img class="picture" src="iam/1.jpg">
-<img class="picture" src="iam/2.jpg">
-<img class="picture" src="iam/3.jpg">
-<img class="picture" src="iam/4.jpg">
-<img class="picture" src="iam/5.jpg">
-
-<a class="back-button" onclick="plusDivs(-1)">&#10094;</a>
-<a class="forward-button" onclick="plusDivs(+1)">&#10095;</a>
-</div>
-
-<script type="text/javascript">
-var slideindex=1;
-showdivs(slideindex);
-
-function plusDivs(n) {
-	showdivs(slideindex+=n);
-}
-
-function showdivs(n)
-{
-	var i;
-	var x=document.getElementsByClassName("picture");
-	if (n > x.length){slideindex=1}
-	if (n <1) {slideindex=x.length}
-		for(i=0;i<x.length;i++){
-			x[i].style.display="none";
-		}
-		x[slideindex-1].style.display="block"
-}
-</script>
-</center>
-</div>
-
+<!-- call to function showdiv to show only the first slide on loading -->
+<body onload="showdivs(1)">
+	<div id="wrapper">
+		<img id="logo" name="logo" src="logo.png" />
+		<center>
+			<!--rotating image in the banner  -->
+			<img id="banner" name="sss" src="banner1.jpg" width="961" height="270"/>
+			<!-- Navigation bar -->
+			<nav>
+				<div class="menu-container">
+				<div class="menu"><a href="index.html">Home</a></div>
+				<div class="menu"><a href="Doha-Corniche.html">Doha Corniche</a></div>
+				<div class="menu"><a href="Souq-Waqif.html">Souq Waqif</a></div>
+				<div class="menu"><a href="Museum-of-Islamic-Art.html">Museum of Islamic Art</li></div>
+				<div class="menu"><a href="Katara-Cultural-Village.html">Katara Cultural Village</a></div>
+				<div class="menu"><a href="The-Pearl-Qatar.html">The Pearl-Qatar</a></div>
+				</div>
+			</nav>
+			<!-- The page body -->
+			<h1>Enjoy Culture and Recreation at Katara</h1>
+			<p>An innovative interpretation of the region’s architectural heritage, this purpose-built development’s impressive theatres, galleries and performance venues stage a lively year-round programme of concerts, shows and exhibitions. Among Katara’s recreational attractions are a wide choice of dining options, including top class restaurants offering a variety of cuisines, and a spacious, well-maintained public beach with water sports.</p><br><br>
+			<!-- picture slide show -->
+			<div id="slideShow">
+				<img class="picture" src="iam/1.jpg">
+				<img class="picture" src="iam/2.jpg">
+				<img class="picture" src="iam/3.jpg">
+				<img class="picture" src="iam/4.jpg">
+				<img class="picture" src="iam/5.jpg">
+				<a class="back-button" onclick="plusDivs(-1)">&#10094;</a>
+				<a class="forward-button" onclick="plusDivs(+1)">&#10095;</a>
+			</div>
+		</center>
+	</div>
 </body>
 </html>

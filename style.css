@@ -4,15 +4,12 @@ body, header
 	background: url("bg5.jpg");
 }
 
-{
-	margin: 0 auto;
-}
-
 #logo
 {
 	text-align: left;
 	padding : 10px;
 }
+
 #banner
 {
 	height: 270px;
@@ -21,6 +18,7 @@ body, header
 	margin-bottom: 0;
 	padding: 0;
 }
+/*The page body*/
 #wrapper
 {
 	width: 961px;
@@ -29,42 +27,38 @@ body, header
     border: 10px solid #670B38;
     background: white;
 }
+ /* Navigation */
+.menu-container
+{	background-color: rgba(118,134,146,.9);
+	display:flex;
+	width: 961px;	
+	height: 40px;
+	padding: 0px;
+	position: absolute;
+    top: 415px;
+    left: 232px;
 
-nav{
-	width: 961px;
-	height: 30px;
-    background: gray;    
-	padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 0;
 }
- nav li, nav ul
+/*to center the text verticlly inside the button the top padding has to go here */
+.menu
 {
-	list-style: none;
-	display: inline;
-    margin-top: : 0px;
-    margin-bottom: 0px;
-    text-align: center;
-    text-decoration: none;
-    width: 961px;
-    color: #670B38;
-    font-size: 20px;      
-
+	padding: 10px 0px 0px 0px ;	
+	flex:1;
 }
-
-nav a{    
+.menu a
+{
+	width: 150.5px;
+	height: 40px;
 	text-decoration: none;
-    margin: 0;
-    color:#670B38;
-    padding: 5px;   
-
+	color:#670B38;
+	
 }
-nav a:hover{
+
+.menu:hover , .menu a:hover{
 	background: #701B40;
 	color: white;
-	font-weight: bolder;
 }
-
+/* end of navigation styling */
 p{
 	font-size: 30px;
 	color: #670B38;
@@ -82,17 +76,17 @@ span
 {
 	height: 384px;
 	width: 600px;
+	border: 5px solid #670B38;
 }
-h1
+h1 , h2	
 {
 	color: #670B38;
-}
-.picture
-{
-border: 5px solid #670B38;
+	float: left;
+	padding: 20px;
+	display: inline-block;
 }
 
 .back-button , .forward-button
 {
-	font-size: 20px;
+	font-size: 30px;
 }
