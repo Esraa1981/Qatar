@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Aclonica|Alegreya|Eczar');
+
 body, header
 {
 	margin: 0 auto;
@@ -51,6 +53,7 @@ body, header
 	height: 40px;
 	text-decoration: none;
 	color:#670B38;
+	font-family: 'Eczar', serif;
 	
 }
 
@@ -64,7 +67,8 @@ p{
 	color: #670B38;
 	text-align: left;
 	text-align: justify;
-	padding: 20px;
+	padding: 20px;	
+	font-family: 'Alegreya', serif;
 }
 
 span
@@ -80,6 +84,8 @@ span
 }
 h1 , h2	
 {
+
+font-family: 'Aclonica', sans-serif;
 	color: #670B38;
 	float: left;
 	padding: 20px;
