@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="Javascript.js"></script>
+<head >
+	<title>Museum of Islamic Art</title>
+</head>
+
+<body>
+
+<div id="wrapper">
+<img id="logo" name="logo" src="logo.png" />
+<center>
+<img id="banner" name="sss" src="banner1.jpg" width="961" height="270"  />
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="Doha-Corniche.html">Doha Corniche</a></li>
+<li><a href="Souq-Waqif.html">Souq Waqif</a></li>
+<li><a href="Museum-of-Islamic-Art.html">Museum of Islamic Art</a></li>
+<li><a href="Katara-Cultural-Village.html">Katara Cultural Village</a></li>
+<li><a href="The-Pearl-Qatar.html">The Pearl-Qatar</a></li>
+</ul>
+</nav>
+<h1>Discover Centuries of the Finest Islamic Art</h1>
+<p>Experience 14 centuries of great art in a few hours. The MIA’s magnificent and imaginatively presented displays of the finest art and artefacts from across the Islamic world have earned it recognition among the world’s top cultural institutions. No visitor can fail to be impressed by the quality and diversity the collections, housed in a modern architectural masterpiece designed by IM Pei. The museum ensures fresh interest through its constantly changing programme of special exhibitions. A fee may be charged for these temporary shows, but admission to the permanent galleries is free.</p><br><br>
+<div id="slideShow">
+<img class="picture" src="iam/1.jpg">
+<img class="picture" src="iam/2.jpg">
+<img class="picture" src="iam/3.jpg">
+<img class="picture" src="iam/4.jpg">
+<img class="picture" src="iam/5.jpg">
+
+<a class="back-button" onclick="plusDivs(-1)">&#10094;</a>
+<a class="forward-button" onclick="plusDivs(+1)">&#10095;</a>
+</div>
+
+<script type="text/javascript">
+var slideindex=1;
+showdivs(slideindex);
+
+function plusDivs(n) {
+	showdivs(slideindex+=n);
+}
+
+function showdivs(n)
+{
+	var i;
+	var x=document.getElementsByClassName("picture");
+	if (n > x.length){slideindex=1}
+	if (n <1) {slideindex=x.length}
+		for(i=0;i<x.length;i++){
+			x[i].style.display="none";
+		}
+		x[slideindex-1].style.display="block"
+}
+</script>
+</center>
+</div>
+
+</body>
+</html>

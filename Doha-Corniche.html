@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="Javascript.js"></script>
+<head >
+	<title>Doha Corniche</title>
+</head>
+
+<body>
+
+<div id="wrapper">
+<img id="logo" name="logo" src="logo.png" />
+<center>
+<img id="banner" name="sss" src="banner1.jpg" width="961" height="270"  />
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="Doha-Corniche.html">Doha Corniche</a></li>
+<li><a href="Souq-Waqif.html">Souq Waqif</a></li>
+<li><a href="Museum-of-Islamic-Art.html">Museum of Islamic Art</a></li>
+<li><a href="Katara-Cultural-Village.html">Katara Cultural Village</a></li>
+<li><a href="The-Pearl-Qatar.html">The Pearl-Qatar</a></li>
+</ul>
+</nav>
+
+
+
+<h1>Doha's Waterfront Promenade</h1>
+<p>A seven-kilometre long waterfront promenade around Doha Bay, the Corniche offers spectacular vistas of the city, from the dramatic high rise towers of the central business district to the bold shapes of the Museum of Islamic Art. Traditional wooden dhows lining the Bay evoke echoes of Qatar’s great seafaring past. The Corniche provides a green, vehicle-free pedestrian space in the heart of the capital.</p><br><br>
+<div id="slideShow">
+<img class="picture" src="corniche/1.jpg">
+<img class="picture" src="corniche/2.jpg">
+<img class="picture" src="corniche/3.jpg">
+<img class="picture" src="corniche/4.jpg">
+
+<a class="back-button" onclick="plusDivs(-1)">&#10094;</a>
+<a class="forward-button" onclick="plusDivs(+1)">&#10095;</a>
+</div>
+
+<script type="text/javascript">
+var slideindex=1;
+showdivs(slideindex);
+
+function plusDivs(n) {
+	showdivs(slideindex+=n);
+}
+
+function showdivs(n)
+{
+	var i;
+	var x=document.getElementsByClassName("picture");
+	if (n > x.length){slideindex=1}
+	if (n <1) {slideindex=x.length}
+		for(i=0;i<x.length;i++){
+			x[i].style.display="none";
+		}
+		x[slideindex-1].style.display="block"
+}
+</script>
+</center>
+</div>
+
+</body>
+</html>
