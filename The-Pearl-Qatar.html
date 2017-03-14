@@ -23,6 +23,45 @@
 </ul>
 </nav>
 
+<h1>Elegant Lifestyles at The Pearl-Qatar</h1>
+<p>The Pearl-Qatar is a man-made island off the West Bay coast featuring Mediterranean-style yacht-lined marinas, residential towers, villas and hotels, as well as luxury shopping at top brand name boutiques and showrooms. A popular dining spot, its waterfront promenades are lined with cafes and restaurants serving every taste – from a refreshing ice cream to a five-star dining experience. The Pearl is a popular visitor attraction by virtue of its chic elegance, inviting description as the ‘Arabian Riviera’.</p><br><br>
+<div id="slideShow">
+<img class="picture" src="the-pearl/1.jpg">
+<img class="picture" src="the-pearl/2.jpg">
+<img class="picture" src="the-pearl/3.jpg">
+<img class="picture" src="the-pearl/4.jpg">
+<img class="picture" src="the-pearl/5.jpg">
+<img class="picture" src="the-pearl/6.jpg">
+
+<a class="back-button" onclick="plusDivs(-1)">&#10094;</a>
+<a class="forward-button" onclick="plusDivs(+1)">&#10095;</a>
+</div>
+
+<script type="text/javascript">
+var slideindex=1;
+showdivs(slideindex);
+
+function plusDivs(n) {
+	showdivs(slideindex+=n);
+}
+
+function showdivs(n)
+{
+	var i;
+	var x=document.getElementsByClassName("picture");
+	if (n > x.length){slideindex=1}
+	if (n <1) {slideindex=x.length}
+		for(i=0;i<x.length;i++){
+			x[i].style.display="none";
+		}
+		x[slideindex-1].style.display="block"
+}
+</script>
+</center>
+</div>
+
+</body>
+</html>
 </center>
 </div>
 
