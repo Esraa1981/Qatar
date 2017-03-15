@@ -3,12 +3,71 @@
 <!-- link to external java script and CSS file -->
 <link rel="stylesheet" type="text/css" href="style.css">
 <script src="Javascript.js"></script>
+<style type="text/css">
+	/*Modal box*/
+	.ClimateTable 
+	{
+		position: fixed;
+		font-family: Arial, Helvetica, sans-serif;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0,0,0,0.8);
+		z-index: 99999;
+		opacity:0;
+		-webkit-transition: opacity 400ms ease-in;
+		-moz-transition: opacity 400ms ease-in;
+		transition: opacity 400ms ease-in;
+		pointer-events: none;
+	}
+	.ClimateTable:target {
+		opacity:1;
+		pointer-events: auto;
+	}
+
+	.ClimateTable > div {
+		width: 1100px;
+		position: relative;
+		margin: 10% auto;
+		padding: 5px 20px 13px 20px;
+		border-radius: 10px;
+		background: #fff;
+		background: -moz-linear-gradient(#fff, #999);
+		background: -webkit-linear-gradient(#fff, #999);
+		background: -o-linear-gradient(#fff, #999);
+	}
+	.close {
+		background: #606061;
+		color: #FFFFFF;
+		line-height: 25px;
+		position: absolute;
+		right: -12px;
+		text-align: center;
+		top: -10px;
+		width: 24px;
+		text-decoration: none;
+		font-weight: bold;
+		-webkit-border-radius: 12px;
+		-moz-border-radius: 12px;
+		border-radius: 12px;
+		-moz-box-shadow: 1px 1px 3px #000;
+		-webkit-box-shadow: 1px 1px 3px #000;
+		box-shadow: 1px 1px 3px #000;
+}
+.close:hover 
+	 {
+		background: #00d9ff; 
+	 }
+
+</style>
 <head >
 	<title>Qatar</title>
 </head>
 <body>
 <div id="wrapper">
 	<img id="logo" name="logo" src="logo.png" />
+	<img id="flag" src="Qatar_Flag5.png" />
 	<center>
 		<!--rotating image in the banner  -->
 		<img id="banner" name="sss" src="banner1.jpg" width="961" height="270"/>
@@ -21,8 +80,6 @@
 			<div class="menu"><a href="The-Pearl-Qatar.html">The Pearl</a></div>
 			<div class="menu"><a href="Souq-Waqif.html">Souq Waqif</a></div>
 			<div class="menu"><a href="Museum-of-Islamic-Art.html">Museum of Islamic Art</a></div>
-			
-			
 			</div>
 		</nav>
 		<!-- The page body -->
@@ -32,10 +89,94 @@
 		<h2>An invitation to explore</h2>
 		<!-- video -->
 		<iframe width="961" height="315" src="https://www.youtube.com/embed/_XxeqqBp8k0" frameborder="0" allowfullscreen></iframe>
-		<footer>
-		<h2>Find us on</h2>
-		</footer>
+		
 	</center>
 </html>
 </div>
+<footer >
+	<div class="footerContainer">
+		<div class="footerbox">
+			<h2 style="color: white" >Find us on</h2>
+			<ul>
+			<li><a style="color: white ; font-size: 20px" href="https://twitter.com/VisitQatar" ><img class="SM" src="twitter.png" >Twitter</a></li>
+			<li><a style="color: white; font-size: 20px" href="https://www.facebook.com/VisitQatar" ><img class="SM" src="facebook.png" >Facebook</a></li>
+			<li><a style="color: white; font-size: 20px" href="https://www.instagram.com/visitqatar" ><img class="SM" src="instagram.png" >Instagram</a></li>
+		</div>
+		<div class="footerbox">
+			<a href="#Climate"><h3 style="color: white">Click to here to see the Climate in Qatar</h3></a>
+			<div id="Climate" class="ClimateTable">
+				<div>
+				<a href="#close" title="Close" class="close">X</a>
+				<h3>Climate data for Qatar</h3>
+				<table>
+				<tr>
+				<th>Month</th>	
+				<th>Jan</th>	
+				<th>Feb</th>											
+				<th>Mar</th>
+				<th>Apr</th>
+				<th>May</th>
+				<th>Jun</th>
+				<th>Jul</th>
+				<th>Aug</th>
+				<th>Sep</th>
+				<th>Oct</th>
+				<th>Nov</th>
+				<th>Dec</th>
+				<th>Year</th>
+				</tr>
+				<tr>
+				<th>Average high °C (°F)</th>	
+				<td>22(72)</td>
+				<td>23(73)</td>
+				<td>27(81)</td>
+				<td>33(91)</td>
+				<td>39(102)</td>
+				<td>42(108)</td>
+				<td>42(108)</td>
+				<td>42(108)</td>
+				<td>39(102)</td>
+				<td>35(95)</td>
+				<td>30(86)</td>
+				<td>25(77)</td>
+				<td>33.3(91.9)</td>
+				</tr>
+				<tr>
+				<th>Average low °C (°F)</th>
+				<td>14(57)</td>
+				 <td>15(59)</td>
+				 <td>17(63)</td>
+				 <td>21(70)</td>
+				 <td>27(81)</td>
+				 <td>29(84)</td>
+				 <td>31(88)</td>
+				 <td>31(88)</td>
+				 <td>29(84)</td>
+				 <td>25(77)</td>
+				 <td>21(70)</td>
+				 <td>16(61)</td>
+				 <td>23(73.5)</td>
+				</tr>
+				<tr>
+				<th>Average precipitation mm (inches)</th>
+				<td>12.7(0.5)</td>
+				<td>17.8(0.701)</td>
+				<td>15.2(0.598)</td>
+				<td>7.6(0.299)</td>
+				<td>2.5(0.098)</td>
+				<td>0(0)</td>
+				<td>0(0)</td>
+				<td>0(0)</td>
+				<td>0(0)</td>
+				<td>0(0)</td>
+				<td>2.5(0.098)</td>
+				<td>12.7(0.5)</td>
+				<td>71(2.794)</td>
+				</tr>
+				</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
 </body>

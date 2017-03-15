@@ -4,12 +4,18 @@ body, header
 {
 	margin: 0 auto;
 	background: url("bg5.jpg");
+	text-align: right;
 }
 
-#logo
+#logo 
 {
 	text-align: left;
-	padding : 10px;
+	padding : 0px;
+}
+#flag
+{
+	height:155px;
+	width: 500px;
 }
 
 #banner
@@ -26,8 +32,9 @@ body, header
 	width: 961px;
     margin: 0 auto;
     margin-bottom: 0;
-    border: 10px solid #670B38;
+    border: 5px solid #670B38;
     background: white;
+    padding-bottom: 0;
 }
  /* Navigation */
 .menu-container
@@ -91,12 +98,47 @@ font-family: 'Aclonica', sans-serif;
 	padding: 20px;
 	display: inline-block;
 }
-
 .back-button , .forward-button
 {
 	font-size: 30px;
 }
 footer
 {
-	background: white;
+	margin: 5px auto;
+	background: #670B38;
+	width: 971px;
+	text-align: center;
+}
+/* styling the footer*/
+.footerContainer
+{
+	display: flex;
+}
+.footerbox
+{
+	flex: 1;
+}
+table , td, tr , th{
+	border: 1px solid #670B38;
+}
+th
+{
+	background: #670B38;
+}
+tr
+{
+	background: gray;
+}
+li
+{
+	text-align: left;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.SM
+{
+	height: 30px;
+	width: 30px;
 }
